@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Appointment Booking System</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js">
+    </script>
+    <script src="assets/customJS/adminShowDoctor.js"></script>
+</head>
+<body>
+
+    <div class="navContainer">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="adminDashboard.html">Doctor Appointment Booking System</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="adminDashboard.html">
+                                    <i class="fa fa-home fa-lg"></i> Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa fa-hospital-o"></i> Hospital
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="addHospital.html"
+                                        style="color: rgb(153,156,159);"><i class="fa fa-plus fa-lg"></i> Add Hospital</a>
+                                    <a class="dropdown-item" href="adminShowHospital.html"
+                                        style="color: rgb(153,156,159);"><i class="fa fa-list-ul fa-lg"></i> Show all Hospitals</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa fa-user-md"></i> Doctor
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="adminAddDoctor.html"
+                                        style="color: rgb(153,156,159);"><i class="fa fa-plus fa-lg"></i> Add Doctor</a>
+                                    <a class="dropdown-item" href="adminShowDoctor.html"
+                                        style="color: rgb(153,156,159);"><i class="fa fa-list-ul fa-lg"></i> Show all Doctors</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="usernameValue" class="nav-link dropdown-toggle" href="" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle-o fa-lg"></i>
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" id="logoutClick" href=""
+                                        style="color: rgb(153,156,159);"><i class="fa fa-sign-out fa-lg"></i> Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="tableContainer">
+
+        <table id="docTable"
+            class="table table-dark table-hover table-responsive table-bordered table-striped dt-responsive wrap"
+            style="width: 100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Doctor Name</th>
+                    <th>Details</th>
+                    <th>Education</th>
+                    <th>Hospital Name</th>
+                    <th>Department</th>
+                    <th>Image</th>
+                    <th>Available time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="dataRow">
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+          <span class="text-muted">Copyright@2019 Manjish</span>
+        </div>
+      </footer>
+</body>
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,539 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+  /* color: #999999; */
+  color: #212529;
+	font-size: 300;
+	font-size: 16px;
+}
+h1, h2, h3
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #222222;
+}
+a, a:hover, a:focus, a:active{
+    outline: none;
+}
+
+h1.white,h1.a{
+    text-align: center; 
+}
+.section-padding{
+	padding: 60px 0px;
+
+}
+h2 {
+    line-height: 20px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+hr.botm-line {
+    height: 3px;
+    width: 60px;
+    background: #ffb737;
+    position: relative;
+    border: 0;
+    margin: 20px 0 20px 0;
+}
+
+/***************************************
+banner
+***************************************/
+.navbar {
+    margin-bottom: 0px;
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
+}
+.navbar-default {
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.navbar-default {
+    background-color: transparent;
+    border: 0px;
+}
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #EA6045;
+}
+
+@media (max-width: 768px) {
+	}
+
+
+.top-nav-collapse {
+    padding: 0;
+}
+
+.white, .white:hover, .white:focus
+{
+	color: #fff;
+	width: 100% ;
+}
+#banner{
+	background: url('../img/appointment3.jpg') no-repeat fixed;
+	background-size: cover;
+	min-height: 550px;
+	position: relative;
+}
+.bg-color{
+	background-color: RGBA(52, 69, 83, 0.8);
+	min-height: 650px;
+}
+.banner-info{
+    padding-top: 190px;
+    margin-top: 40px;
+    text-align: center;
+}
+.banner-text{
+	color: #fff;
+}
+.banner-text h1{
+	font-family: 'Candal', sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+	padding-bottom:15px;
+}
+.btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
+	margin-top: 30px;
+	padding: 10px 20px;
+	font-size: 12px;
+	background-color: rgba(12, 184, 182, 0.91);
+	border-radius: 3px;
+	color: #fff;
+}
+.overlay-detail a i {
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    font-size: 38px;
+    color: #fff;
+    margin: 0 auto;
+}
+.text-primary i{
+    padding-top: 8px;
+    display: inline-block;
+}
+/***************************************
+services
+***************************************/
+.icon i{
+	color: #0cb8b6;
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+.service-info{
+	margin-bottom: 20px;
+}
+.icon-info h4{
+	padding-bottom: 15px;
+}
+.icon-info p{
+	font-size: 15px !important;
+}
+
+@media (min-width: 551px) and (max-width: 980px){
+
+}
+    h2{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .banner-text h1{
+        font-size: 24px;
+    }
+
+/***************************************
+login
+***************************************/
+
+    .loginDiv{
+        max-width:350px;
+        padding:40px 40px;
+        background-color:#F7F7F7;
+        margin:0 auto 25px;
+        margin-top:120px;
+        border-radius:2px;
+        box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+      
+      .loginDiv .img{
+        width:96px;
+        height:96px;
+        margin:0 auto 10px;
+        display:block;
+        border-radius:50%;
+      }
+      
+      .loginDiv .lblLogin{
+        font-size:18px;
+        color: rgb(37, 40, 45);
+        font-weight:bold;
+        text-align:center;
+        margin:10px 0 0;
+        min-height:1em;
+      }
+      
+      .loginDiv .form-signin input[type=password],
+      .loginDiv .form-signin input[type=text], .loginDiv .form-signin button{
+        height:44px;
+        font-size:16px;
+        width:100%;
+        display:block;
+        margin-bottom:10px;
+        z-index:1;
+        position:relative;
+        box-sizing:border-box;
+      }
+      
+      .loginDiv label{
+        color:#000000;
+      }
+      
+      .loginDiv .form-signin .form-control:focus{
+        border-color:rgb(37, 40, 45);
+        outline:0;
+        -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+        box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+      }
+      
+      .loginDiv .btn.btn-signin{
+        font-weight:700;
+        height:36px;
+        line-height:36px;
+        font-size:14px;
+        background:rgb(37, 40, 45);
+        border-radius:3px;
+        border:none;
+        transition:all 0.218s;
+        padding:0;
+        margin-top: 20px;
+      }
+      
+      .loginDiv .btn.btn-signin:hover, .loginDiv .btn.btn-signin:active,
+      .loginDiv .btn.btn-signin:focus{
+        background:rgb(14, 16, 17);
+      }
+      
+      .loginDiv .not-a-member{
+        color:rgb(35, 49, 56);
+      }
+      
+      .loginDiv .not-a-member:hover, .loginDiv .not-a-member:active, 
+      .loginDiv .not-a-member:focus{
+        color:rgb(14, 16, 17);
+      }
+
+      .signupDiv{
+        max-width:450px;
+        padding:40px 40px;
+        background-color:#F7F7F7;
+        margin:0 auto 25px;
+        margin-top:120px;
+        border-radius:2px;
+        box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+      
+      .signupDiv .img{
+        width:96px;
+        height:96px;
+        margin:0 auto 10px;
+        display:block;
+        border-radius:50%;
+      }
+      
+      .signupDiv .lblSignup{
+        font-size:18px;
+        color: rgb(37, 40, 45);
+        font-weight:bold;
+        text-align:center;
+        margin:10px 0 0;
+        min-height:1em;
+      }
+      
+      .signupDiv .form-signup input[type=email], .form-signup input[type=date], .signupDiv .form-signup input[type=password],
+      .signupDiv .form-signup input[type=text], .signupDiv .form-signup button{
+        height:44px;
+        font-size:16px;
+        width:100%;
+        display:block;
+        margin-bottom:10px;
+        z-index:1;
+        position:relative;
+        box-sizing:border-box;
+      }
+      
+      .signupDiv .form-signup .form-control:focus{
+        border-color:rgb(37, 40, 45);
+        outline:0;
+        -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+        box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+      }
+      
+      .signupDiv .btn.btn-signup{
+        font-weight:700;
+        height:36px;
+        line-height:36px;
+        font-size:14px;
+        background:rgb(37, 40, 45);
+        border-radius:3px;
+        border:none;
+        transition:all 0.218s;
+        padding:0;
+        margin-top: 20px;
+      }
+      
+      .signupDiv .btn.btn-signup:hover, .signupDiv .btn.btn-signup:active,
+      .signupDiv .btn.btn-signup:focus{
+        background:rgbrgb(14, 16, 17);
+      }
+      
+      .signupDiv .already-a-member{
+        color:rgb(37, 40, 45);
+      }
+      
+      .signupDiv .already-a-member:hover, .signupDiv .already-a-member:active, 
+      .signupDiv .already-a-member:focus{
+        color:rgbrgb(14, 16, 17);
+      }
+
+      #itemDiv{
+        margin-top: 60px;
+      }
+
+      #itemDiv .col{
+        margin-top: 20px;
+        margin-left: -75px;
+      }
+
+      .addDiv{
+        max-width:550px;
+        padding:40px 40px;
+        background-color:#F7F7F7;
+        margin:0 auto 25px;
+        margin-top:120px;
+        border-radius:2px;
+        box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+      
+      .addDiv .img{
+        width:96px;
+        height:96px;
+        margin:0 auto 10px;
+        display:block;
+        border-radius:50%;
+      }
+      
+      .addDiv .lblAdd{
+        font-size:18px;
+        color: rgb(37, 40, 45);
+        font-weight:bold;
+        text-align:center;
+        margin:10px 0 0;
+        min-height:1em;
+      }
+      
+      .addDiv .addCar input[type=password],
+      .addDiv .addCar input[type=text], .addDiv .addCar button{
+        height:44px;
+        font-size:16px;
+        width:100%;
+        display:block;
+        margin-bottom:10px;
+        z-index:1;
+        position:relative;
+        box-sizing:border-box;
+      }
+      
+      .addDiv .addCar .form-control:focus{
+        border-color:rgb(37, 40, 45);
+        outline:0;
+        -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+        box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+      }
+      
+      .addDiv .btn.btn-add{
+        font-weight:700;
+        height:36px;
+        line-height:36px;
+        font-size:14px;
+        background:rgb(37, 40, 45);
+        border-radius:3px;
+        border:none;
+        transition:all 0.218s;
+        padding:0;
+        margin-top: 20px;
+      }
+      
+      .addDiv .btn.btn-add:hover, .addDiv .btn.btn-add:active,
+      .addDiv .btn.btn-add:focus{
+        background:rgb(14, 16, 17);
+      }
+      textarea{
+        height: auto;
+        width: 500px;
+        text-align: justify;
+      }
+
+      .tableContainer{
+        padding:40px 40px;
+        margin:0 auto 25px;
+        margin-top:50px;
+        border-radius:2px;
+        box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      #hosTable .even {
+        background-color: #000000;
+      }
+
+      #docTable .even {
+        background-color: #000000;
+      }
+
+      #bookingTable .even {
+        background-color: #000000;
+      }
+
+      #hosTable td:nth-of-type(1) {
+        display: none;
+      }
+
+      #docTable td:nth-of-type(1) {
+        display: none;
+      }
+
+      #bookingTable td:nth-of-type(1) {
+        display: none;
+      }
+
+      #hosTable th:nth-of-type(1) {
+        display: none;
+      }
+
+      #docTable th:nth-of-type(1) {
+        display: none;
+      }
+
+      #bookingTable th:nth-of-type(1) {
+        display: none;
+      }
+
+       #rowDiv{
+        margin-left: -75px;
+        margin-right: -75px;
+        padding: 0px;
+      }
+
+      #rowDiv .col-sm-6{
+        margin-top: 75px;
+      }
+
+      #rowDiv a h2:hover{
+        color: dodgerblue;
+      }
+
+      #rowDiv a h2{
+        color:royalblue;
+      }
+
+      #hospitalRow{
+        margin-top: 75px;
+      }
+
+      .checkboxes {
+        text-align: left;
+      }
+
+      #availableTime {
+        border-collapse: separate;
+        border-spacing: 5px;
+        
+      }
+
+      #appointmentView{
+        margin-top: 100px;
+      }
+
+      #appointmentView label{
+        margin-top: 50px;
+      }
+
+      #appointmentView span{
+        color:red;
+      }
+
+      .docDetails {
+        overflow: hidden;
+    }
+    
+        .docDetails .docProfileImg {
+            float: left;
+            width: 30%;
+        }
+    
+        .docDetails .docDesc {
+            float: left;
+            width: 70%;
+        }
+
+        .docProfileImg img {
+          width: 100px;
+          float: left;
+          margin: 0 5px 0 0;
+          height: 100px;
+          border-radius: 50px;
+          border: 3px solid #dbdbdb;
+          object-fit: cover;
+      }
+
+      #doctorContainer{
+        margin-top: 100px;
+      }
+
+      #doctorCard img, #docCard img {
+        width: 100px;
+        margin: 0 5px 10px 0;
+        height: 100px;
+        border-radius: 50px;
+        border: 3px solid #dbdbdb;
+        object-fit: cover;
+    }
+
+    #docCard #docName{
+      margin-bottom: 10px;
+    }
+
+    #doctorCard{
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+
+      #bookAppointment button{
+        margin-top:50px;
+      }
+
+      #doctorDetailContainer{
+        margin-top: 100px;
+      }
+
+      .footer {
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: #000000;
+      }

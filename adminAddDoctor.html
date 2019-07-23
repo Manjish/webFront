@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Appointment Booking System</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/customJS/adminAddDoctor.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <div class="navContainer">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="adminDashboard.html">Doctor Appointment Booking System</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="adminDashboard.html">
+                                    <i class="fa fa-home fa-lg"></i> Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa fa-hospital-o"></i> Hospital
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="addHospital.html"
+                                        style="color: rgb(153,156,159);"><i class="fa fa-plus fa-lg"></i> Add Hospital</a>
+                                    <a class="dropdown-item" href="adminShowHospital.html"
+                                        style="color: rgb(153,156,159);"><i class="fa fa-list-ul fa-lg"></i> Show all Hospitals</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fa fa-user-md"></i> Doctor
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="adminAddDoctor.html" style="color: rgb(153,156,159);"><i class="fa fa-plus fa-lg"></i> Add Doctor</a>
+                                    <a class="dropdown-item" href="adminShowDoctor.html" style="color: rgb(153,156,159);"><i class="fa fa-list-ul fa-lg"></i> Show all
+                                        Doctors</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a id="usernameValue" class="nav-link dropdown-toggle" href="" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle-o fa-lg"></i>
+                                </a>
+                                <div class="dropdown-menu bg-dark" id="logoutClick" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="" style="color: rgb(153,156,159);"><i class="fa fa-sign-out fa-lg"></i> Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="addDiv"><img src="assets/img/hospital.png" width="100" height="100" class="img">
+        <p class="lblAdd">ADD DOCTOR</p>
+        <form action="" method="POST" id="addHosForm" enctype="multipart/form-data" class="addHospital">
+            <label for="name" id="name">Name:</label>
+            <input class="form-control" type="text" id="docName" required="required">
+
+            <label for="details" id="details">Details:</label>
+            <textarea class="form-control" maxlength="500" id="docDetails" rows="5"></textarea>
+
+            <label for="address" id="address">Education:</label>
+            <input class="form-control" type="text" id="docEducation" required="required">
+
+            <label for="hospital" id="hospitalName">Hospital:</label>
+            <div id="dropdown">
+                <select class="form-control" id="hospitalList">
+                    <option selected="selected" disabled>--Select a hospital--</option>
+                </select>
+            </div>
+
+            <label for="department" id="departmentName">Department:</label>
+            <div id="dropdown">
+                <select class="form-control" id="departmentList">
+                    <option></option>
+                </select>
+            </div>
+
+            <form enctype="multipart/form-data" id="imageUploadForm">
+                <label for="image" id="image">Image:</label>
+                <input class="form-control" type="file" required="required" id="docImage">
+            </form>
+
+            <br />
+            <label for="docAvailableTime" id="docAvailableTime">Time when available: </label><br />
+            <table id="availableTime">
+                <tbody id="tblBody">
+                <tr>
+                    <th><label>Sunday:</label></th>
+                    <td><input class="form-control" type="text" id="sunday" required="required"></td>
+                </tr>
+                <tr>
+                    <th><label>Monday:</label></th>
+                    <td><input class="form-control" type="text" id="monday" required="required"></td>
+                </tr>
+                <tr>
+                    <th><label>Tuesday:</label></th>
+                    <td><input class="form-control" type="text" id="tuesday" required="required"></td>
+                </tr>
+                <tr>
+                    <th><label>Wednesday:</label></th>
+                    <td><input class="form-control" type="text" id="wednesday" required="required"></td>
+                </tr>
+                <tr>
+                    <th><label>Thursday:</label></th>
+                    <td><input class="form-control" type="text" id="thursday" required="required"></td>
+                </tr>
+                <tr>
+                    <th><label>Friday:</label></th>
+                    <td><input class="form-control" type="text" id="friday" required="required"></td>
+                </tr>
+                <tr>
+                    <th><label>Saturday:</label></th>
+                    <td><input class="form-control" type="text" id="saturday" required="required"></td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-primary btn-block btn-lg btn-add" type="submit" id="addDoc">Add</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+          <span class="text-muted">Copyright@2019 Manjish</span>
+        </div>
+      </footer>
+</body>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</html>

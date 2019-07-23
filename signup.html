@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctor Appointment Booking System</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/customJS/signup.js"></script>
+</head>
+<body>
+  <div class="navContainer">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Doctor Appointment Booking System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fa fa-home fa-lg"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                  <i class="fa fa-sign-in fa-lg"></i> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="signupDiv"><img src="assets/img/signup.svg" width="100" height="100" class="img">
+    <p class="lblSignup">SIGN UP</p>
+    <form class="form signup form-signup">
+      <input class="form-control" type="text" required placeholder="First Name" autofocus="" id="firstName"
+        name="firstName"><br />
+      <input class="form-control" type="text" required="" placeholder="Last Name" autofocus="" id="lastName"
+        name="lastName"><br />
+      <input class="form-control" type="text" required="" placeholder="Username" autofocus="" id="username"
+        name="username"><br />
+      <h6>Gender: &nbsp;&nbsp;
+        <input type="radio" id="gender" name="gender" required="" value="Male"> Male
+        <input type="radio" id="gender" name="gender" required="" value="Female"> Female
+        <input type="radio" id="gender" name="gender" required="" value="Others"> Others</h6><br />
+      <input class="form-control" type="text" required="" placeholder="Phone" autofocus="" id="phone"
+        name="phone"><br />
+      <input class="form-control" type="text" required="" placeholder="Address" autofocus="" id="address"
+        name="address"><br />
+      <input class="form-control" type="date" required="" placeholder="Date Of Birth" autofocus="" id="dob"
+        name="dob"><br />
+      <input class="form-control" type="email" required="" placeholder="Email address" autofocus="" id="email"
+        name="email"><br />
+      <input class="form-control" type="password" required="" placeholder="Password" name="password" id="password"
+        onkeyup='check();'><br />
+      <input class="form-control" type="password" required="" placeholder="Confirm Password" name="confirm_password"
+        id="confirm_password" onkeyup='check();'><br />
+      <span id='message'></span>
+      <button class="btn btn-primary btn-block btn-lg btn-signup" name="signup" id="signupBtn" type="submit">Sign
+        Up</button>
+        </form>
+    </div><a href="login.html" class="already-a-member">Already a member?</a>
+ 
+
+  <script type="text/javascript">
+    var check = function () {
+      var password = $('#password').val();
+      if (document.getElementById('password').value == "" ||
+        document.getElementById('confirm_password').value == "") {
+        document.getElementById('message').innerHTML = '';
+      } else {
+        if (document.getElementById('password').value ==
+          document.getElementById('confirm_password').value) {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('message').innerHTML = 'Password match';
+        } else {
+          document.getElementById('message').style.color = 'red';
+          document.getElementById('message').innerHTML = 'Password do not match';
+        }
+      }
+    }
+  </script>
+  <footer class="footer">
+    <div class="container text-center">
+      <span class="text-muted">Copyright@2019 Manjish</span>
+    </div>
+  </footer>
+</body>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</html>
